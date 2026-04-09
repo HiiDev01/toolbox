@@ -1,0 +1,181 @@
+.top-bar {
+  background-color: var(--dark-black);
+  color: var(--light-gray);
+  font-size: 0.875rem;
+  padding: 10px 15px;
+  font-family: var(--font-family-base);
+}
+
+/* CONTAINER */
+.top-bar-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* LINKS */
+.top-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.top-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  border-right: 1px solid var(--text-light);
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.top-links a:last-child {
+  border-right: none;
+}
+
+/* PROMO TEXT */
+.promo-text {
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+/* LOCALE */
+.locale {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* DROPDOWN WRAPPER */
+.localecountry,
+.localeLanguage {
+  position: relative;
+}
+
+/* BUTTONS */
+.localecountryBtn,
+.localeLangBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  color: var(--light-gray);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: none;
+  padding: 0 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/* DROPDOWNS */
+.localecountrydrop,
+.localeLangdrop {
+  width: 180px;
+  position: absolute;
+  top: 150%;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+/* POSITION FIX */
+.localecountrydrop {
+  left: 0;
+}
+
+.localeLangdrop {
+  right: 0;
+}
+
+/* DROPDOWN BUTTONS */
+.localecountrydrop button,
+.localeLangdrop button {
+  width: 100%;
+  background: transparent;
+  color: var(--light-gray);
+  font-size: 0.85rem;
+  border: none;
+  padding: 8px 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* HOVER */
+.locale button:hover,
+.localecountrydrop button:hover,
+.localeLangdrop button:hover {
+  color: var(--primary-orange);
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 980px) {
+  .top-bar-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .top-links {
+    justify-content: center;
+  }
+
+  .top-links a {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+
+  .promo-text {
+    order: 3;
+    font-size: 0.8rem;
+  }
+
+  .locale {
+    order: 2;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* ========================= */
+/* 📱 SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 780px) {
+  .top-links {
+    gap: 5px;
+  }
+
+  .top-links a {
+    border: none;
+    padding: 3px 5px;
+    font-size: 0.75rem;
+  }
+
+  .promo-text {
+    font-size: 0.75rem;
+  }
+
+  .localecountryBtn,
+  .localeLangBtn {
+    font-size: 0.75rem;
+  }
+
+  .localecountrydrop,
+  .localeLangdrop {
+    width: 150px;
+  }
+}

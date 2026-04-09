@@ -1,0 +1,143 @@
+.best-selling-container {
+  display: flex;
+  gap: 40px;
+  background: #f9f9f9;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: var( --font-family-base);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Categories Sidebar */
+.categories-sidebar {
+  flex: 1;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  background-color: var(--white);
+  padding: 30px;
+}
+
+
+
+.category-group h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+}
+
+.category-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-group li {
+  padding: 7px 0;
+  font-size: 15px;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-group li:hover {
+  color: #007bff;
+  padding-left: 4px;
+}
+
+/* Best Selling Section */
+.best-selling-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.prd-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  display: flex;
+}
+
+.prd-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.prdimg {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prdimg img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.prdinfo{
+    text-align: left;
+}
+.prdinfo h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+  margin: 0 0 5px 0;
+}
+
+.prdrating {
+  color: #ffc107;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.rating-count {
+  color: #888;
+  font-size: 14px;
+}
+
+.price-section {
+
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.current-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #e63939;
+}
+
+/* For the last product with red price */
+.product-card:last-child .current-price {
+  color: #e63939;
+}

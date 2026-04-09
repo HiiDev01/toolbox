@@ -1,0 +1,15 @@
+{
+  "welcome": "Bienvenue sur notre site",
+  "topbar": {
+    "about": "SOBRE NOSOTROS",
+    "blog": "BLOG",
+    "contact": "CONTACTO",
+    "faq": "PREGUNTAS FRECUENTES",
+    "title": "Ahorra hasta un 20% en todos los juguetes y accesorios con el código \"FLAT26OFF\""
+  },
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "language": "Langue"
+  }
+}

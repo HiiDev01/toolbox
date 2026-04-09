@@ -1,0 +1,61 @@
+.promo-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 70vh;
+}
+
+.promo-card {
+  border-radius: var(--radius-lg);
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 70vh;
+}
+
+.orange {
+  background: var(--primary-orange);
+  color: white;
+}
+
+.blue {
+  background: #E3F2FD;
+  color: #222;
+}
+
+.promo-card h3 {
+  font-size: 1.65rem;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.promo-card .price {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.new-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #FF5722;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.promo-card img {
+  align-self: flex-end;
+  height: 160px;
+  object-fit: contain;
+}

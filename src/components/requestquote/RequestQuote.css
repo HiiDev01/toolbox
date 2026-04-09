@@ -1,0 +1,49 @@
+.request-quote {
+  padding: 100px 0;
+  background: white;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.quote-form h2 {
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+}
+
+.quote-form input,
+.quote-form select {
+  width: 100%;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.05rem;
+}
+
+.quote-form input:focus,
+.quote-form select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 992px) {
+  .quote-grid {
+    grid-template-columns: 1fr;
+  }
+}

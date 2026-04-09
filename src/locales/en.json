@@ -1,0 +1,15 @@
+{
+  "welcome": "Welcome to our website",
+  "topbar":{
+    "about": "ABOUT US",
+    "blog": "BLOG",
+    "contact": "CONTACT",
+    "faq": "FAQs",
+    "title": "Save up to 20% on all Toys & Accessories with \"FLAT26OFF\" code"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "language": "Language"
+  }
+}

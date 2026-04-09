@@ -1,0 +1,56 @@
+.popular-categories {
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.popular-categories h2 {
+  font-size: 1.85rem;
+  margin-bottom: 30px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 24px;
+}
+
+.categry-card {
+  background: none;
+  border-radius: 0px;
+  padding: 24px 0px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+
+.category-image {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 16px;
+  background: #f8fafc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.category-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.view-all {
+  color: #FF9800;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.view-all:hover{
+  text-decoration: underline;
+}

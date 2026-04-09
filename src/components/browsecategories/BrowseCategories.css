@@ -1,0 +1,104 @@
+.browse-categories {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.accordion {
+  border-top: 1px solid #e5e7eb;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 16px 20px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+  background-color: #f8fafc;
+}
+
+.title {
+  text-align: left;
+}
+
+.arrow {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6b7280;
+  transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+}
+
+.arrow.rotate {
+  transform: rotate(45deg);
+  color: #3b82f6;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f8fafc;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 220px;   /* Adjust if you add more sub-items */
+}
+
+.accordion-content ul {
+  margin: 0;
+  padding: 12px 20px 20px 40px;
+  list-style: none;
+}
+
+.accordion-content li {
+  padding: 8px 0;
+  color: #4b5563;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.accordion-content li:hover {
+  color: #3b82f6;
+  padding-left: 8px;
+}

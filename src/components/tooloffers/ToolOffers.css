@@ -1,0 +1,130 @@
+.tool-offers-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 0px;
+  max-width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: var(  --shadow-xl);
+}
+
+.categories {
+  display: flex;
+  gap: 48px;
+  flex: 1;
+}
+
+.category-column {
+  flex: 1;
+}
+
+.category-column h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.category-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-column li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.category-column li:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Offer Cards */
+.offers-wrapper {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+}
+
+.offer-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.yellow-offer {
+  background: #f9f4eb;
+}
+
+.blue-offer {
+  background: #e6f3ff;
+}
+
+/* Badge */
+.offer-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #fff;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.special {
+  background: #fff;
+  color: #d32f2f;
+}
+
+/* Tool Image */
+.tool-image {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+  margin: 40px 0 20px 0;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+/* Offer Text */
+.offer-text h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.blue-offer .offer-text h2 {
+  color: #0d47a1;
+}
+
+.offer-text p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  margin: 8px 0 0 0;
+}
